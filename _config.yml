@@ -35,8 +35,6 @@ plugins:
 timezone: Asia/Guangzhou
 
 collections:
-  publications:
-    output: true
-  news:
-    output: true
+  - publications
+  - news
   - showcase
