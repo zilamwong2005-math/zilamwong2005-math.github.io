@@ -32,7 +32,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-timezone: Asia/Guangzhou
+timezone: Asia/Shanghai
 
 collections:
   - publications
