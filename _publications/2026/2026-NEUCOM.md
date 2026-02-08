@@ -6,7 +6,7 @@ pub:            "Neurocomputing"
 status:         "submitted"
 pub_date:       "2026"
 abstract: >-
-  Cover image is a photo by Thomas Renaud on Unsplash. The abstract of the publication is meant to be a TLDR (very brief summary with 1~2 sentences) of your paper.
+  In this work, we leverage tools from real analysis to establish a rigorous connection between path gradients and loss functions. Building upon this foundation, we define a novel metric to evaluate the strength of neural architectures.
 
 cover: /assets/images/covers/lipdarts.png
 authors:
