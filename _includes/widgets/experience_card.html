@@ -31,9 +31,9 @@
                             <h6>Research Interests</h6>
                             <ul class="list-unstyled mb-1">
                                 {% for item in site.data.profile.Research_Interest %}
-                                <li class="media mb-1">
-                                    <div class="media-body">
-                                        <div class="small d-flex">{{ item.name }}</div>
+                                <li>
+                                    <div class="d-flex">
+                                        <div>{{ item.name }}</div>
                                         {% if item.desc %}
                                         <div class="small text-muted">{{ item.desc }}</div>
                                         {% endif %}
