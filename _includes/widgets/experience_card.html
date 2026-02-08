@@ -26,19 +26,21 @@
                     </div>
                     {% endif %}
 
-                    {% if site.data.profile.Research_Interest %}
+                   {% if site.data.profile.Research_Interest %}
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
                             <h6>Research Interests</h6>
-                                <ul class="list-unstyled mb-1">
-                                    {% for item in site.data.profile.Research_Interest %}
-                                        <li class="mb-1">
-                                            <i class="bi bi-dot"></i> <span>{{ item.name }}</span>
+                            <ul class="list-unstyled mb-1">
+                                {% for item in site.data.profile.Research_Interest %}
+                                <li class="media mb-1">
+                                    <div class="media-body">
+                                        <div style="font-size: 0.9rem;">{{ item.name }}</div>
                                         {% if item.desc %}
-                                             <span class="small text-muted"> - {{ item.desc }}</span>
+                                        <div class="small text-muted">{{ item.desc }}</div>
                                         {% endif %}
-                                         </li>
-                                    {% endfor %}
+                                    </div>
+                                </li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>
