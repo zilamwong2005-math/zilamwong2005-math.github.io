@@ -3,6 +3,7 @@ title:          "Lipschitz-Regularized Path-Strength Refactoring for Differentia
 # date:           2026-01-05 00:01:00 +0800
 selected:       true
 pub:            "Neurocomputing"
+status:         "submitted"
 pub_date:       "2026"
 abstract: >-
 
