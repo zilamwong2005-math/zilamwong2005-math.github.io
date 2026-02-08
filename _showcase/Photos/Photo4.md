@@ -7,6 +7,6 @@ group: Photos
 <div>
 <img src="{{ 'assets/images/etc/Photo4.jpg' | relative_url }}" class="img-fluid rounded-xl" >
 <p class="card-text text-center my-3">
-    My Attempts/Scripts at <strong>Visualizing Math</strong> (2).
+    My Attempts/Scripts at <strong>Visualizing Math</strong>.
 </p>
 </div>
