@@ -14,6 +14,5 @@ authors:
 - Qingtian Liu
 - Zihao Chen
 - Suohai Fan
-# links:
-#   Paper: https://www.cell.com
----
+
+ Paper: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6319280
