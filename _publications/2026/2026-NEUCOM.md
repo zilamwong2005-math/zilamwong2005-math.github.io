@@ -15,5 +15,5 @@ authors:
 - Zihao Chen
 - Suohai Fan
 links:
-  Preprint: https://www.cell.com
+  Preprint: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6319280
 ---
