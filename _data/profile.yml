@@ -22,7 +22,7 @@ short_bio: >-
   <p>
    I am an endlessly curious, freedom-chasing, and tireless individual. I love mathematics and hope to remain in love with it forever.
   </p>
-  <p>
+  <p class="font-italic text-muted">
     <i> I am an endlessly curious, freedom-chasing, and tireless individual. I love mathematics and hope to remain in love with it forever.
   </p>
 
