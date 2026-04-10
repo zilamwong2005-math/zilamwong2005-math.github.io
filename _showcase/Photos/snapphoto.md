@@ -6,7 +6,6 @@ images:
 - src: /assets/images/etc/Photo7.jpg
   desc: Candid Snapshots.
 - src: /assets/images/etc/Photo9.jpg
-  desc: Candid Snapshots.
 
 ---
 
