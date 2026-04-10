@@ -26,19 +26,19 @@ images:
   .carousel-inner img {
     object-fit: cover;
     width: 100%;
-    height: 420px;
+    height: 600px;
   }
   .right-card img {
     object-fit: cover;
     width: 100%;
-    height: 420px;
+    height: 600px;
   }
 </style>
 
 <div class="row equal-height-row">
   <!-- 左侧：轮播图，宽度 8 -->
   <div class="col-12 col-md-8 equal-height-col">
-    {% include widgets/carousel.html id=page.id images=page.images height="420px" %}
+    {% include widgets/carousel.html id=page.id images=page.images height="600px" %}
   </div>
   
   <!-- 右侧：Photo8 内容，宽度 4 -->
