@@ -40,12 +40,12 @@ images:
 
 <div class="row equal-height-row">
   <!-- 左侧：轮播图，宽度 8 -->
-  <div class="col-12 col-md-8.5 equal-height-col">
+  <div class="col-12 col-md-8 equal-height-col">
     {% include widgets/carousel.html id=page.id images=page.images height="500px" %}
   </div>
   
   <!-- 右侧：Photo8 内容，宽度 4 -->
-  <div class="col-12 col-md-3.5 equal-height-col">
+  <div class="col-12 col-md-3 equal-height-col">
     <div class="card h-100 right-card">
       <img src="{{ '/assets/images/etc/Photo8.jpg' | relative_url }}" class="card-img-top rounded-xl" style="height: 500px; object-fit: cover;">
     </div>
