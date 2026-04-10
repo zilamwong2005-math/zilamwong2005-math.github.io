@@ -38,7 +38,7 @@ images:
 
 <div class="row equal-height-row">
   <!-- 左侧：轮播图，宽度 8 -->
-  <div class="col-12 col-md-9 equal-height-col">
+  <div class="col-12 col-md-8.5 equal-height-col">
     {% include widgets/carousel.html id=page.id images=page.images height="500px" %}
     <div class="text-center mb-3">
     <h4>Candid Snapshots</h4>
