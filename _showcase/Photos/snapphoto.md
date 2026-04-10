@@ -40,6 +40,9 @@ images:
   <!-- 左侧：轮播图，宽度 8 -->
   <div class="col-12 col-md-9 equal-height-col">
     {% include widgets/carousel.html id=page.id images=page.images height="500px" %}
+    <div class="text-center mb-3">
+    <h4>Candid Snapshots</h4>
+  </div>
   </div>
   
   <!-- 右侧：Photo8 内容，宽度 4 -->
