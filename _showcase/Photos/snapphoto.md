@@ -4,9 +4,9 @@ width: 12
 date: 2020-01-12 00:01:00 +0800
 images:
 - src: /assets/images/etc/Photo7.jpg
-  desc: Description 1.
+  desc: Candid Snapshots.
 - src: /assets/images/etc/Photo9.jpg
-  desc: Description 1.
+  desc: Candid Snapshots.
 
 ---
 
