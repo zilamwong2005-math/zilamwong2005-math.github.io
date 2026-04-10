@@ -4,7 +4,9 @@ width: 12
 date: 2020-01-12 00:01:00 +0800
 images:
 - src: /assets/images/etc/Photo7.jpg
+  desc: Description 1.
 - src: /assets/images/etc/Photo9.jpg
+  desc: Description 1.
 
 ---
 
@@ -40,9 +42,6 @@ images:
   <!-- 左侧：轮播图，宽度 8 -->
   <div class="col-12 col-md-8.5 equal-height-col">
     {% include widgets/carousel.html id=page.id images=page.images height="500px" %}
-    <div class="text-center mb-3">
-    <h4>Candid Snapshots</h4>
-  </div>
   </div>
   
   <!-- 右侧：Photo8 内容，宽度 4 -->
