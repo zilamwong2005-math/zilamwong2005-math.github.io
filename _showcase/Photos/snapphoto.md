@@ -5,6 +5,7 @@ date: 2020-01-12 00:01:00 +0800
 images:
 - src: /assets/images/etc/Photo7.jpg
 - src: /assets/images/etc/Photo9.jpg
+
 ---
 
 <style>
@@ -42,7 +43,7 @@ images:
   </div>
   
   <!-- 右侧：Photo8 内容，宽度 4 -->
-  <div class="col-12 col-md-3 equal-height-col">
+  <div class="col-12 col-md-3.5 equal-height-col">
     <div class="card h-100 right-card">
       <img src="{{ '/assets/images/etc/Photo8.jpg' | relative_url }}" class="card-img-top rounded-xl" style="height: 500px; object-fit: cover;">
     </div>
