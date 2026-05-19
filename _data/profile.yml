@@ -5,11 +5,11 @@ navbar_name: "Zilin Wang's Homepage"
 positions:
 - name: Whompoa,Guangzhou,China
 - name: Mathematics
-- name: Mandarin/Cantonese/English
+- name: Mandarin (Native)/Cantonese/English (IELTS: 6)
 
 
 email: "wzlwzlwzl@stu2023.jnu.edu.cn"
-cv_link: "/assets/CV/main0311.pdf"
+cv_link: "/assets/CV/main05192026.pdf"
 # github: zilamwong2005-math
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
@@ -39,8 +39,8 @@ education:
   date: Sep. 2023 - present
   
 Research_Interest:
-- name: Dynamical Systems
 - name: Mathematical Physics
+- name: Dynamical Systems 
 - name: Applied Math
 
 awards:
