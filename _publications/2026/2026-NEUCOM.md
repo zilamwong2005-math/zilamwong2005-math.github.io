@@ -3,8 +3,10 @@ title:          "Lipschitz-Regularized Path-Strength Refactoring for Differentia
 date:           2026-02-05 00:01:00 +0800
 selected:       true
 pub:            "Neurocomputing"
-status:         "submitted"
-pub_date:       "2026"
+status:         "accepted"
+pub_post:       ","
+pub_date:       "2026,"
+pub_last:       "Article 135217"
 abstract: >-
   In this work, we leverage tools from real analysis to establish a rigorous connection between path gradients and loss functions. Building upon this foundation, we define a novel metric to evaluate the strength of neural architectures.
 
@@ -15,5 +17,6 @@ authors:
 - Zihao Chen
 - Suohai Fan
 links:
-  SSRN Preprint: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6319280
+  DOI: https://doi.org/10.1016/j.neucom.2026.135217
+  ScienceDirect: https://www.sciencedirect.com/science/article/pii/S0925231226026159
 ---
