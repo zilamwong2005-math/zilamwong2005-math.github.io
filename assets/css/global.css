@@ -118,24 +118,27 @@ div.lazy {
 
 .profile-education-entry {
     display: grid;
-    grid-template-columns: 30px minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas:
-        "logo name date"
-        ". detail detail";
-    column-gap: 0.75rem;
+        "name date"
+        "detail detail";
+    column-gap: 1rem;
     row-gap: 0.3rem;
     align-items: center;
 }
 
 .profile-education-logo {
-    grid-area: logo;
-    width: 30px;
-    height: 30px;
+    width: 1em;
+    height: 1em;
     object-fit: contain;
+    flex: 0 0 auto;
 }
 
 .profile-entry-title {
     grid-area: name;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
     margin: 0;
     font-size: 1.05rem;
 }
@@ -234,17 +237,11 @@ div.lazy {
 
 @media (max-width: 767.98px) {
     .profile-education-entry {
-        grid-template-columns: 28px minmax(0, 1fr);
+        grid-template-columns: minmax(0, 1fr);
         grid-template-areas:
-            "logo name"
-            ". detail"
-            ". date";
-        column-gap: 0.7rem;
-    }
-
-    .profile-education-logo {
-        width: 28px;
-        height: 28px;
+            "name"
+            "detail"
+            "date";
     }
 
     .profile-entry-date {

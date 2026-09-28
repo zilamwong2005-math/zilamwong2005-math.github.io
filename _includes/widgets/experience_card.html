@@ -7,8 +7,10 @@
                     <h4 class="profile-section-title">Education</h4>
                     {% for item in site.data.profile.education %}
                     <div class="profile-education-entry {% unless forloop.last %}mb-4{% endunless %}">
-                        <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" class="profile-education-logo">
-                        <h5 class="profile-entry-title">{{ item.name }}</h5>
+                        <h5 class="profile-entry-title">
+                            {{ item.name }}
+                            {% if item.logo %}<img src="{{ item.logo | relative_url }}" alt="" aria-hidden="true" class="profile-education-logo">{% endif %}
+                        </h5>
                         <div class="profile-entry-date">{{ item.date }}</div>
                         <div class="profile-entry-detail">
                             {% if item.dept %}<div class="text-muted mb-1">{{ item.dept }}</div>{% endif %}
