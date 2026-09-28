@@ -90,3 +90,153 @@ div.lazy {
     font-family: Source Code Pro, monospace;
 }
 
+.profile-overview-card,
+.compact-publications-card {
+    overflow: hidden;
+}
+
+.profile-overview-section {
+    padding: 2.1rem 2.4rem;
+}
+
+.profile-overview-section + .profile-overview-section {
+    border-top: 1px solid #eceff2;
+}
+
+.profile-section-title,
+.publication-section-header {
+    color: #20242a;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.035em;
+    line-height: 1.3;
+}
+
+.profile-section-title {
+    margin-bottom: 1.35rem;
+}
+
+.profile-education-logo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.profile-entry-title {
+    font-size: 1.05rem;
+}
+
+.profile-entry-detail {
+    line-height: 1.6;
+}
+
+.profile-entry-date,
+.honor-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.research-interest-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.research-interest-item {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.55rem 0.9rem;
+    color: #343a40;
+    background: #f4f6f8;
+    border: 1px solid #e8ebee;
+    border-radius: 999px;
+    line-height: 1.25;
+}
+
+.honor-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 2rem;
+    padding: 0.42rem 0;
+    line-height: 1.5;
+}
+
+.honor-name {
+    min-width: 0;
+}
+
+.publication-section-header {
+    padding: 1.7rem 2.4rem 1.15rem;
+}
+
+.compact-publications-list {
+    padding: 0 2.4rem;
+}
+
+.compact-publication-item {
+    padding: 0.65rem 0 1.5rem;
+}
+
+.compact-publication-title {
+    margin-bottom: 0.45rem;
+    font-size: 1.08rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.compact-publication-authors,
+.compact-publication-venue {
+    margin-bottom: 0.25rem;
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.compact-publication-venue {
+    color: #59616a;
+}
+
+.compact-publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 0.7rem;
+    font-size: 0.88rem;
+}
+
+.compact-publications-footer {
+    padding: 1rem 2.4rem 1.4rem;
+    border-top: 1px solid #eceff2;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+@media (max-width: 767.98px) {
+    .profile-overview-section {
+        padding: 1.65rem 1.5rem;
+    }
+
+    .publication-section-header {
+        padding: 1.5rem 1.5rem 1rem;
+    }
+
+    .compact-publications-list {
+        padding: 0 1.5rem;
+    }
+
+    .compact-publications-footer {
+        padding: 1rem 1.5rem 1.25rem;
+    }
+
+    .honor-item {
+        display: block;
+        padding: 0.55rem 0;
+    }
+
+    .honor-date {
+        display: block;
+        margin-top: 0.15rem;
+    }
+}
+

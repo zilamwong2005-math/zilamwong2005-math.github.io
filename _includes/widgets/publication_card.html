@@ -1,28 +1,26 @@
 {% assign publications = include.publications %}
-<div class="my-3 p-0 bg-white shadow-sm rounded-xl">
-    {% assign submitted_pubs = site.publications | where: "status", "submitted" %}
-    {% if submitted_pubs.size > 0 %}
-    <h6 class="border-bottom border-gray p-3 mb-0 text-orange" style="color: #e67e22;">
-        <i class="fas fa-paper-plane"></i> Submitted & Under Review
-    </h6>
+{% assign submitted_pubs = publications | where: "status", "submitted" %}
+{% assign accepted_pubs = publications | hide_future_posts | where: "status", "accepted" %}
+
+{% if submitted_pubs.size > 0 %}
+<div class="my-4 p-0 bg-white shadow-sm rounded-xl overflow-hidden">
+    <div class="publication-section-header">Submitted &amp; Under Review</div>
     {% for item in submitted_pubs %}
-        {% include widgets/publication_item.html item=item %}
+        {% include widgets/publication_item_compact.html item=item %}
     {% endfor %}
-    {% endif %}
-
-    {% assign accepted_pubs = site.publications | hide_future_posts | where: "status", "accepted" %}
-    {% if accepted_pubs.size > 0 %}
-    <h6 class="border-bottom border-gray p-3 mb-0 text-primary">
-        <i class="fas fa-check-circle"></i> Accepted & Published
-    </h6>
-    {% for item in accepted_pubs %}
-        {% include widgets/publication_item.html item=item %}
-    {% endfor %}
-    {% endif %}
-
-    <h6 class="d-block p-3 mt-0 text-right">
-        <a href="{{ 'publications' | relative_url }}">Full Publication List <i class="fas fa-angle-double-right"></i></a>
-    </h6>
 </div>
+{% endif %}
 
-
+{% if accepted_pubs.size > 0 %}
+<div class="my-4 p-0 bg-white shadow-sm rounded-xl overflow-hidden compact-publications-card">
+    <div class="publication-section-header">Accepted &amp; Published</div>
+    <div class="compact-publications-list">
+        {% for item in accepted_pubs %}
+            {% include widgets/publication_item_compact.html item=item hide_bottom_border=forloop.last %}
+        {% endfor %}
+    </div>
+    <div class="compact-publications-footer">
+        <a href="{{ 'publications' | relative_url }}">Full publication list <i class="fas fa-arrow-right ml-1"></i></a>
+    </div>
+</div>
+{% endif %}

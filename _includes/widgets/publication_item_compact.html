@@ -1,0 +1,21 @@
+{% assign item = include.item %}
+<article class="compact-publication-item {% unless include.hide_bottom_border %}border-bottom{% endunless %}">
+    <h5 class="compact-publication-title">{{ item.title }}</h5>
+    <div class="compact-publication-authors">
+        {% include widgets/author_list.html authors=item.authors %}
+    </div>
+    <div class="compact-publication-venue">
+        {{ item.pub_pre }}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}
+    </div>
+    {% if item.links %}
+    <div class="compact-publication-links">
+        {% for link in item.links %}
+            {% if link[1].url %}
+            <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">{{ link[0] }}</a>
+            {% else %}
+            <a target="_blank" href="{{ link[1] }}">{{ link[0] }}</a>
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</article>
