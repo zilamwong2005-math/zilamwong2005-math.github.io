@@ -6,17 +6,13 @@
                 <section class="profile-overview-section">
                     <h4 class="profile-section-title">Education</h4>
                     {% for item in site.data.profile.education %}
-                    <div class="d-flex align-items-start {% unless forloop.last %}mb-4{% endunless %}">
-                        <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" class="profile-education-logo mr-3">
-                        <div class="flex-grow-1">
-                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-start">
-                                <div>
-                                    <h5 class="mb-1 profile-entry-title">{{ item.name }}</h5>
-                                    {% if item.dept %}<div class="text-muted mb-1">{{ item.dept }}</div>{% endif %}
-                                    <div class="profile-entry-detail">{{ item.position }}</div>
-                                </div>
-                                <div class="profile-entry-date mt-2 mt-md-0 ml-md-4">{{ item.date }}</div>
-                            </div>
+                    <div class="profile-education-entry {% unless forloop.last %}mb-4{% endunless %}">
+                        <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" class="profile-education-logo">
+                        <h5 class="profile-entry-title">{{ item.name }}</h5>
+                        <div class="profile-entry-date">{{ item.date }}</div>
+                        <div class="profile-entry-detail">
+                            {% if item.dept %}<div class="text-muted mb-1">{{ item.dept }}</div>{% endif %}
+                            {{ item.position }}
                         </div>
                     </div>
                     {% endfor %}

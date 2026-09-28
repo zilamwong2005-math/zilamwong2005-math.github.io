@@ -116,18 +116,38 @@ div.lazy {
     margin-bottom: 1.35rem;
 }
 
+.profile-education-entry {
+    display: grid;
+    grid-template-columns: 30px minmax(0, 1fr) auto;
+    grid-template-areas:
+        "logo name date"
+        ". detail detail";
+    column-gap: 0.75rem;
+    row-gap: 0.3rem;
+    align-items: center;
+}
+
 .profile-education-logo {
-    width: 44px;
-    height: 44px;
+    grid-area: logo;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
 }
 
 .profile-entry-title {
+    grid-area: name;
+    margin: 0;
     font-size: 1.05rem;
 }
 
 .profile-entry-detail {
+    grid-area: detail;
     line-height: 1.6;
+}
+
+.profile-entry-date {
+    grid-area: date;
+    align-self: center;
 }
 
 .profile-entry-date,
@@ -213,6 +233,24 @@ div.lazy {
 }
 
 @media (max-width: 767.98px) {
+    .profile-education-entry {
+        grid-template-columns: 28px minmax(0, 1fr);
+        grid-template-areas:
+            "logo name"
+            ". detail"
+            ". date";
+        column-gap: 0.7rem;
+    }
+
+    .profile-education-logo {
+        width: 28px;
+        height: 28px;
+    }
+
+    .profile-entry-date {
+        margin-top: 0.1rem;
+    }
+
     .profile-overview-section {
         padding: 1.65rem 1.5rem;
     }
