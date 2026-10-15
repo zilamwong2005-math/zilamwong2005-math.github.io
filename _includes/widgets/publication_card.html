@@ -3,30 +3,39 @@
 {% assign accepted_pubs = publications | hide_future_posts | where: "status", "accepted" %}
 
 {% if submitted_pubs.size > 0 or accepted_pubs.size > 0 %}
-<h3 class="selected-publications-title">{{ include.title | default: "Selected Publications" }}</h3>
-{% endif %}
+<div class="row mt-4">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white compact-publications-card selected-publications-card">
+            <div class="card-body p-0">
+                <h4 class="selected-publications-title">{{ include.title | default: "Selected Publications" }}</h4>
 
-{% if submitted_pubs.size > 0 %}
-<div class="mb-4 p-0 bg-white shadow-sm rounded-xl overflow-hidden compact-publications-card">
-    <div class="publication-section-header">Submitted &amp; Under Review</div>
-    <div class="compact-publications-list">
-        {% for item in submitted_pubs %}
-            {% include widgets/publication_item_compact.html item=item hide_bottom_border=forloop.last %}
-        {% endfor %}
-    </div>
-</div>
-{% endif %}
+                {% if submitted_pubs.size > 0 %}
+                <section class="publication-status-section">
+                    <h5 class="publication-section-header">Submitted &amp; Under Review</h5>
+                    <div class="compact-publications-list">
+                        {% for item in submitted_pubs %}
+                            {% include widgets/publication_item_compact.html item=item hide_bottom_border=forloop.last %}
+                        {% endfor %}
+                    </div>
+                </section>
+                {% endif %}
 
-{% if accepted_pubs.size > 0 %}
-<div class="mb-4 p-0 bg-white shadow-sm rounded-xl overflow-hidden compact-publications-card">
-    <div class="publication-section-header">Accepted &amp; Published</div>
-    <div class="compact-publications-list">
-        {% for item in accepted_pubs %}
-            {% include widgets/publication_item_compact.html item=item hide_bottom_border=forloop.last %}
-        {% endfor %}
-    </div>
-    <div class="compact-publications-footer">
-        <a href="{{ 'publications' | relative_url }}">Full publication list <i class="fas fa-arrow-right ml-1"></i></a>
+                {% if accepted_pubs.size > 0 %}
+                <section class="publication-status-section">
+                    <h5 class="publication-section-header">Accepted &amp; Published</h5>
+                    <div class="compact-publications-list">
+                        {% for item in accepted_pubs %}
+                            {% include widgets/publication_item_compact.html item=item hide_bottom_border=forloop.last %}
+                        {% endfor %}
+                    </div>
+                </section>
+                {% endif %}
+
+                <div class="compact-publications-footer">
+                    <a href="{{ 'publications' | relative_url }}">Full publication list <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 {% endif %}
