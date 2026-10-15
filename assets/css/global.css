@@ -192,7 +192,6 @@ div.lazy {
 
 .selected-publications-title {
     margin: 0;
-    padding: 2.1rem 2.4rem 0.25rem;
     color: #20242a;
     font-size: 1.15rem;
     font-weight: 700;
@@ -229,6 +228,11 @@ div.lazy {
     margin: 0;
     padding: 1.25rem 2.4rem 1rem;
     font-size: 1.02rem;
+}
+
+.selected-publications-card .selected-publications-title {
+    padding: 2.1rem 2.4rem 0.25rem;
+    font-size: 1.15rem;
 }
 
 .compact-publications-list {
@@ -273,11 +277,6 @@ div.lazy {
 }
 
 @media (max-width: 767.98px) {
-    .selected-publications-title {
-        padding: 1.65rem 1.5rem 0.2rem;
-        font-size: 1.15rem;
-    }
-
     .publication-area-section {
         margin-top: 1.75rem;
     }
@@ -305,6 +304,10 @@ div.lazy {
 
     .publication-section-header {
         padding: 1.15rem 1.5rem 0.9rem;
+    }
+
+    .selected-publications-card .selected-publications-title {
+        padding: 1.65rem 1.5rem 0.2rem;
     }
 
     .compact-publications-list {
