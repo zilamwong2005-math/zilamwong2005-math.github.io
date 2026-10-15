@@ -5,8 +5,8 @@ selected:       true
 pub:            "Neurocomputing"
 status:         "accepted"
 pub_post:       ","
-pub_date:       "2026,"
-pub_last:       "Article 135217"
+pub_date:       "vol. 708,"
+pub_last:       "Art. no. 135217, 2027"
 abstract: >-
   In this work, we leverage tools from real analysis to establish a rigorous connection between path gradients and loss functions. Building upon this foundation, we define a novel metric to evaluate the strength of neural architectures.
 

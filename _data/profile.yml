@@ -9,7 +9,7 @@ positions:
 
 
 email: "wzlwzlwzl@stu2023.jnu.edu.cn"
-cv_link: "/assets/CV/CV260928.pdf"
+cv_link: "/assets/CV/CV261015.pdf"
 # github: zilamwong2005-math
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
@@ -40,16 +40,19 @@ education:
   
 Research_Interest:
 - name: Dynamical Systems
+- name: Data Science
 - name: Applied Mathematics
 
 awards:
-- name: Outstanding Student Cadre Scholarship
-  date: 2023-2024 Academic Year
-- name: Academic Excellence Scholarship (Third-class)
-  date: 2024-2025 Academic Year
-- name: China Undergraduate Mathematical Contest in Modeling, Provincial Third Prize
-  date: Oct. 2024
-- name: Asia and Pacific Mathematical Contest in Modeling, National Second Prize
-  date: Nov. 2024
+- name: Academic Excellence Scholarship (Second Class), Jinan University
+  date: 2025-2026 Academic Year
 - name: The Chinese Mathematics Competitions (Mathematics Major Group), Provincial Third Prize
   date: Nov. 2025
+- name: Academic Excellence Scholarship (Third-class)
+  date: 2024-2025 Academic Year
+- name: Asia and Pacific Mathematical Contest in Modeling, National Second Prize
+  date: Nov. 2024
+- name: China Undergraduate Mathematical Contest in Modeling, Provincial Third Prize
+  date: Oct. 2024
+- name: Outstanding Student Cadre Scholarship
+  date: 2023-2024 Academic Year
