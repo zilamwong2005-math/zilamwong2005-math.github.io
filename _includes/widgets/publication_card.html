@@ -3,11 +3,13 @@
 {% assign accepted_pubs = publications | hide_future_posts | where: "status", "accepted" %}
 
 {% if submitted_pubs.size > 0 %}
-<div class="my-4 p-0 bg-white shadow-sm rounded-xl overflow-hidden">
+<div class="my-4 p-0 bg-white shadow-sm rounded-xl overflow-hidden compact-publications-card">
     <div class="publication-section-header">Submitted &amp; Under Review</div>
-    {% for item in submitted_pubs %}
-        {% include widgets/publication_item_compact.html item=item %}
-    {% endfor %}
+    <div class="compact-publications-list">
+        {% for item in submitted_pubs %}
+            {% include widgets/publication_item_compact.html item=item hide_bottom_border=forloop.last %}
+        {% endfor %}
+    </div>
 </div>
 {% endif %}
 
