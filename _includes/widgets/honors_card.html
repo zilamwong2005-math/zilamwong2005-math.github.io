@@ -1,0 +1,21 @@
+{% if site.data.profile.awards %}
+<div class="row mt-4">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white profile-overview-card">
+            <div class="card-body p-0">
+                <section class="profile-overview-section">
+                    <h4 class="profile-section-title">Honors &amp; Awards</h4>
+                    <div class="honors-list">
+                        {% for item in site.data.profile.awards %}
+                        <div class="honor-item">
+                            <div class="honor-name">{{ item.name }}</div>
+                            <div class="honor-date">{{ item.date }}</div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

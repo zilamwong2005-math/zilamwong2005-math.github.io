@@ -34,19 +34,6 @@
                 </section>
                 {% endif %}
 
-                {% if site.data.profile.awards %}
-                <section class="profile-overview-section">
-                    <h4 class="profile-section-title">Honors &amp; Awards</h4>
-                    <div class="honors-list">
-                        {% for item in site.data.profile.awards %}
-                        <div class="honor-item">
-                            <div class="honor-name">{{ item.name }}</div>
-                            <div class="honor-date">{{ item.date }}</div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </section>
-                {% endif %}
             </div>
         </div>
     </div>
