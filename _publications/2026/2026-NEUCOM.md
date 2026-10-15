@@ -2,6 +2,7 @@
 title:          "Lipschitz-Regularized Path-Strength Refactoring for Differentiable Architecture Search"
 date:           2026-02-05 00:01:00 +0800
 selected:       true
+research_area:  "Differentiable Architecture Search"
 pub:            "Neurocomputing"
 status:         "accepted"
 pub_post:       ","

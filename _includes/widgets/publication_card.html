@@ -2,8 +2,12 @@
 {% assign submitted_pubs = publications | where: "status", "submitted" %}
 {% assign accepted_pubs = publications | hide_future_posts | where: "status", "accepted" %}
 
+{% if submitted_pubs.size > 0 or accepted_pubs.size > 0 %}
+<h3 class="selected-publications-title">{{ include.title | default: "Selected Publications" }}</h3>
+{% endif %}
+
 {% if submitted_pubs.size > 0 %}
-<div class="my-4 p-0 bg-white shadow-sm rounded-xl overflow-hidden compact-publications-card">
+<div class="mb-4 p-0 bg-white shadow-sm rounded-xl overflow-hidden compact-publications-card">
     <div class="publication-section-header">Submitted &amp; Under Review</div>
     <div class="compact-publications-list">
         {% for item in submitted_pubs %}
@@ -14,7 +18,7 @@
 {% endif %}
 
 {% if accepted_pubs.size > 0 %}
-<div class="my-4 p-0 bg-white shadow-sm rounded-xl overflow-hidden compact-publications-card">
+<div class="mb-4 p-0 bg-white shadow-sm rounded-xl overflow-hidden compact-publications-card">
     <div class="publication-section-header">Accepted &amp; Published</div>
     <div class="compact-publications-list">
         {% for item in accepted_pubs %}
