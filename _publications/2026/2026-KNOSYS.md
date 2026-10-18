@@ -11,4 +11,6 @@ pub_last:       "2026"
 authors:
 - Zilin Wang
 - Lianghai Xiao
+links:
+  SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7611537
 ---
