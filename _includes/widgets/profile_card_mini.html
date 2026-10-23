@@ -22,18 +22,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col text-center h4">
-                        {{ site.data.profile.primary_name }}
+                    <div class="col text-center newspaper-profile-name">
+                        {{ site.data.profile.secondary_name | default: site.data.profile.primary_name }}
                     </div>
                 </div>
-
-                {% if site.data.profile.secondary_name %}
-                <div class="row">
-                    <div class="col text-center profile-secondary-name">
-                        {{ site.data.profile.secondary_name }}
-                    </div>
-                </div>
-                {% endif %}
 
                 <div class="row small">
                     <div class="col text-center">

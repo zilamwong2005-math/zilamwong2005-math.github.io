@@ -456,7 +456,7 @@ body.newspaper-body {
 
 .masthead-name {
     padding: 0.65rem 0 0.45rem;
-    font-size: clamp(3.2rem, 8vw, 6.25rem);
+    font-size: clamp(2.8rem, 5.2vw, 4.5rem);
     font-weight: 700;
     letter-spacing: -0.055em;
     line-height: 1;
@@ -470,12 +470,6 @@ body.newspaper-body {
     padding: 0.6rem 0;
     border-top: 1px solid #aaa;
     color: #555;
-}
-
-.masthead-deck > span + span::before {
-    content: "|";
-    margin-right: 1rem;
-    color: #888;
 }
 
 .newspaper-sidebar {
@@ -526,12 +520,14 @@ body.newspaper-body {
     line-height: 1.15;
 }
 
-.newspaper-profile .profile-secondary-name {
-    margin: 0 0 0.75rem;
-    color: #555;
+.newspaper-profile .newspaper-profile-name {
+    margin: 0 0 0.8rem;
+    color: #222;
     font-family: "Songti SC", SimSun, serif;
-    font-size: 1rem;
-    letter-spacing: 0.14em;
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
 }
 
 .newspaper-profile .row.small {
@@ -609,8 +605,8 @@ body.newspaper-body {
 }
 
 .site-paper .profile-education-logo {
-    width: 0.9em;
-    height: 0.9em;
+    width: 1.15em;
+    height: 1.15em;
 }
 
 .site-paper .research-interest-list {
@@ -756,16 +752,12 @@ body.newspaper-body {
 
     .masthead-name {
         padding: 0.8rem 0 0.55rem;
-        font-size: clamp(2.1rem, 8.2vw, 3.2rem);
+        font-size: clamp(1.95rem, 7.4vw, 2.8rem);
     }
 
     .masthead-deck {
         font-size: 0.61rem;
         text-align: center;
-    }
-
-    .masthead-deck > span + span::before {
-        display: none;
     }
 
     .newspaper-sidebar {
@@ -835,8 +827,5 @@ body.newspaper-body {
         gap: 0.2rem;
     }
 
-    .masthead-deck > span {
-        width: 100%;
-    }
 }
 
