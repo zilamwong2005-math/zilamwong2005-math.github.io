@@ -1,5 +1,5 @@
 primary_name: "Zilin Wang"
-secondary_name: ""
+secondary_name: "王梓霖"
 navbar_name: "Zilin Wang's Homepage"
 
 positions:
@@ -32,11 +32,12 @@ portrait_caption: >-
 
 education:
 - name: Jinan University
+  url: https://english.jnu.edu.cn/
   logo: /assets/images/badges/Jinan-university-logo.png
   position: >- 
     School of Information Science and Technology <br/>
     B.Sc. in Mathematics
-  date: Sep. 2023 - present
+  date: Sep. 2023 - Jul. 2027
   
 Research_Interest:
 - name: Dynamical Systems
@@ -50,11 +51,11 @@ awards:
   date: Jun. 2026
 - name: The Chinese Mathematics Competitions (Mathematics Major Group), Provincial Third Prize
   date: Nov. 2025
-- name: Academic Excellence Scholarship (Third-class)
+- name: Academic Excellence Scholarship (Third-class), Jinan University
   date: 2024-2025 Academic Year
 - name: Asia and Pacific Mathematical Contest in Modeling, National Second Prize
   date: Nov. 2024
 - name: China Undergraduate Mathematical Contest in Modeling, Provincial Third Prize
   date: Oct. 2024
-- name: Outstanding Student Cadre Scholarship
+- name: Outstanding Student Cadre Scholarship, Jinan University
   date: 2023-2024 Academic Year

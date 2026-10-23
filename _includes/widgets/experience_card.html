@@ -8,7 +8,11 @@
                     {% for item in site.data.profile.education %}
                     <div class="profile-education-entry {% unless forloop.last %}mb-4{% endunless %}">
                         <h5 class="profile-entry-title">
+                            {% if item.url %}
+                            <a class="text-body" target="_blank" rel="noopener noreferrer" href="{{ item.url }}">{{ item.name }}</a>
+                            {% else %}
                             {{ item.name }}
+                            {% endif %}
                             {% if item.logo %}<img src="{{ item.logo | relative_url }}" alt="" aria-hidden="true" class="profile-education-logo">{% endif %}
                         </h5>
                         <div class="profile-entry-date">{{ item.date }}</div>
