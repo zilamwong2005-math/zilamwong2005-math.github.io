@@ -525,9 +525,10 @@ body.newspaper-body {
     color: #222;
     font-family: "Songti SC", SimSun, serif;
     font-size: 1.9rem;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 0.08em;
     line-height: 1.2;
+    -webkit-text-stroke: 0.35px currentColor;
 }
 
 .newspaper-profile .row.small {
@@ -537,10 +538,18 @@ body.newspaper-body {
     line-height: 1.65;
 }
 
+.newspaper-profile .scholar-text,
 .newspaper-profile .email-text {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.69rem;
     overflow-wrap: anywhere;
+}
+
+.newspaper-profile .scholar-text {
+    color: #222;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
 }
 
 .newspaper-main > .row.mt-4 {

@@ -37,25 +37,18 @@
 
                 <div class="row small">
                     <div class="col text-center">
+                        {% if site.data.profile.gscholar %}
+                        <a class="scholar-text" href="{{ site.data.profile.gscholar | escape }}" target="_blank" rel="noopener noreferrer">Google Scholar</a><br/>
+                        {% endif %}
                         <a class="email-text" href="mailto:{{ site.data.profile.email | encode_email }}">
                             {{ site.data.profile.email | replace: "@", "(at)" }}
                         </a>
                     </div>
                 </div>
 
+                {% if site.data.profile.github or site.data.profile.wechat_qrcode or site.data.profile.twitter or site.data.profile.linkedin or site.data.profile.orcid %}
                 <div class="row pt-2">
                     <div class="col text-center h4">
-                        {% if site.data.profile.gscholar %}
-                        {%- if site.data.profile.gscholar contains 'scholar.google' -%}
-                        {%- assign gscholar_url = site.data.profile.gscholar -%}
-                        {%- else -%}
-                        {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
-                        {%- endif -%}
-                        <a class="px-1 no-break" target="_blank" href="{{ gscholar_url }}">
-                            <i class="fab fa-google-scholar"></i>
-                        </a>
-                        {% endif %}
-                        
                         {% if site.data.profile.github %}
                         <a class="px-1 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
                             <i class="fab fa-github"></i>
@@ -87,6 +80,7 @@
                         {% endif %}
                     </div>
                 </div>
+                {% endif %}
             </div>
         </div>
     </div>
