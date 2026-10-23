@@ -7,6 +7,7 @@ navbar_title: Publications
 {% assign research_areas = "Out-of-Distribution Detection|Differentiable Architecture Search" | split: "|" %}
 {% assign sorted_publications = site.publications | sort: "date" | reverse %}
 
+<h1 class="newspaper-page-title">Publications</h1>
 <div class="publication-directions">
     {% for area in research_areas %}
         {% assign area_items = sorted_publications | where: "research_area", area %}
